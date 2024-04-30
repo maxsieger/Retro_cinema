@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Chatra {literal} -->   
+<script>
+        window.ChatraSetup = {
+        colors: {
+            buttonText: '#f0f0f0be', /* цвет текста кнопки чата */
+            buttonBg: '#565656c8'    /* цвет фона кнопки чата */
+        }
+    };
+    (function(d, w, c) {
+        w.ChatraID = 'k7fhERRj7T893suv2';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
     <title>ФИЛЬМЫ</title>
 </head>
 <body>
@@ -18,55 +38,100 @@
     </header>
 
     <main>
-        <section class="left-block">
-            <div class="list-film">
-                <span class="list-film__span">Список</span>
-                <ul class="left-block__list">
-                    <li ><p class="left-block__link" id="Stulya">12 стульев</p></li>
-                    <li><p class="left-block__link" id="Briliant">Брилиантовая рука</p></li>
-                    <li><p class="left-block__link" id="Gentalmen" >Джентльмены удачи</p><a href=""></a></li>
-                    <li><p class="left-block__link">Брилиантовая рука</p><a href=""></a></li>
-                    <li><p class="left-block__link">Брилиантовая рука</p><a href=""></a></li>
-                    <li><p class="left-block__link">Брилиантовая рука</p><a href=""></a></li>
-                </ul>
-            </div>    
+        <section class="rec-section">
+            <p class="h1">Рекомендации</p>
+            <ul class="rec-section__list">
+                <li class="footer__link">
+                    <div class="card-1">
+                        <p>Брилиантовая рука</p>
+                    </div>
+                </li>
+                <li class="rec-section__link">
+                    <div class="card-2">
+                        <p>12 стульев</p>
+                    </div>
+                </li>
+                <li class="rec-section__link">
+                    <div class="card-3">
+                        <p>Приключения Шурика</p>
+                    </div>
+                </li>
+                <li class="rec-section__link">
+                    <div class="card-4">
+                        <p>Джентльмены удачи</p>
+                    </div>
+                </li>
+            </ul>
         </section>
-        <section class="right-section">
-            <div data-open="off" class="film-1">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/P8t2dbJ7YXY?si=I_zjoSpwdmdm46lb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h1>12 стульев</h1>
-                <p>Режиссёр: Гайдай Леонид<br>
-                    Сценаристы: Гайдай Леонид, Бахнов Владлен<br>
-                    Композитор: Зацепин Александр<br>
-                    Операторы: Полуянов Сергей, Шувалов Валерий<br>
-                    Художник-постановщик: Куманьков Евгений<br>
+        <section class="container-section">
+            <section class="left-block">
+                <div class="list-film">
+                    <span class="list-film__span">Список</span>
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="left-block__list">
+                        <li ><p class="left-block__link" id="Stulya">12 стульев</p></li>
+                        <li><p class="left-block__link" id="Briliant">Брилиантовая рука</p></li>
+                        <li><p class="left-block__link" id="Gentalmen" >Джентльмены удачи</p></li>
+                        <li><p class="left-block__link" id="shurik">Приключения Шурика</p></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-phone">
+                    <ul class="left-block__list-phone">
+                        <li ><p class="left-block__link" id="Stulya-1">12 стульев</p></li>
+                        <li><p class="left-block__link" id="Briliant-1">Брилиантовая рука</p></li>
+                        <li><p class="left-block__link" id="Gentalmen-1" >Джентльмены удачи</p><a href=""></a></li>
+                        <li><p class="left-block__link" id="shurik-1">Приключения Шурика</p><a href=""></a></li>
+                    </ul>
+                </div>
+
+            </div>   
+            </section>
+            <section class="right-section">
+                <div data-open="off" class="film-1">
+                    <iframe class="f-1" width="560" height="315" src="https://www.youtube.com/embed/P8t2dbJ7YXY?si=I_zjoSpwdmdm46lb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h1>12 стульев</h1>
+                    <p>Режиссёр: Гайдай Леонид<br>
+                        Сценаристы: Гайдай Леонид, Бахнов Владлен<br>
+                        Композитор: Зацепин Александр<br>
+                        Операторы: Полуянов Сергей, Шувалов Валерий<br>
+                        Художник-постановщик: Куманьков Евгений<br>
+                        </p>
+                    <p>Кинокомедия по одноименному роману И.Ильфа и Е.Петрова. Умирая, теща бывшего светского льва и предводителя дворянства, а ныне скромного делопроизводителя уездного ЗАГСа Ипполита Воробьянинова, открыла ему свою тайну: она спрятала фамильные драгоценности в одном из стульев гостиного гарнитура. Бриллиантовый угар вскружил голову Воробьянинова, и он ринулся на поиски сокровищ. Тут судьба столкнула его с "великим комбинатором" Остапом Бендером, который хочет ему помочь – конечно, небескорыстно…
                     </p>
-                <p>Кинокомедия по одноименному роману И.Ильфа и Е.Петрова. Умирая, теща бывшего светского льва и предводителя дворянства, а ныне скромного делопроизводителя уездного ЗАГСа Ипполита Воробьянинова, открыла ему свою тайну: она спрятала фамильные драгоценности в одном из стульев гостиного гарнитура. Бриллиантовый угар вскружил голову Воробьянинова, и он ринулся на поиски сокровищ. Тут судьба столкнула его с "великим комбинатором" Остапом Бендером, который хочет ему помочь – конечно, небескорыстно…
-                </p>
-            </div>
-            <div class="film-2">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4j-oolUPs0g?si=fGoaoJ19A0uNrfix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h1>Брилиантовая рука</h1>
-                <p>Режиссер: Гайдай Леонид Иович<br>
-                    Сценаристы: Гайдай Леонид Иович, Костюковский Яков, Слободской Морис<br>
-                    Композитор: Зацепин Александр</p>
-                    <p>Детективно-эксцентрическая комедия о скромном служащем Семене Семеновиче Горбункове, который во время туристической поездки за рубеж попадает в центр контрабандистской операции – его принимают за связного и закатывают в гипс на руке драгоценности для переправки через границу. В итоге герой помогает милиции раскрыть преступление</p>
-            </div>
-            <div class="film-3">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8tJPKSz6Gaw?si=yP4-jS5J5K6FU2KR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h1>Джентльмены удачи</h1>
-                <p>Режиссер: Серый Александр<br>
-                    Сценаристы: Данелия Георгий Николаевич, Токарева Виктория<br>
-                    Композитор: Гладков Геннадий
-                </p>
-                <p>Одна из самых любимых народом комедий про добряка заведующего детсадом, который как две капли похож на рецидивиста, сбежавшего из тюрьмы. Работники уголовного розыска решили воспользоваться этим сходством для розыска похищенных археологических ценностей.</p>
-            </div>
+                </div>
+                <div class="film-2">
+                    <iframe class="f-2" width="560" height="315" src="https://www.youtube.com/embed/4j-oolUPs0g?si=fGoaoJ19A0uNrfix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h1>Брилиантовая рука</h1>
+                    <p>Режиссер: Гайдай Леонид Иович<br>
+                        Сценаристы: Гайдай Леонид Иович, Костюковский Яков, Слободской Морис<br>
+                        Композитор: Зацепин Александр</p>
+                        <p>Детективно-эксцентрическая комедия о скромном служащем Семене Семеновиче Горбункове, который во время туристической поездки за рубеж попадает в центр контрабандистской операции – его принимают за связного и закатывают в гипс на руке драгоценности для переправки через границу. В итоге герой помогает милиции раскрыть преступление</p>
+                </div>
+                <div class="film-3">
+                    <iframe class="f-3" width="560" height="315" src="https://www.youtube.com/embed/8tJPKSz6Gaw?si=yP4-jS5J5K6FU2KR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h1>Джентльмены удачи</h1>
+                    <p>Режиссер: Серый Александр<br>
+                        Сценаристы: Данелия Георгий Николаевич, Токарева Виктория<br>
+                        Композитор: Гладков Геннадий
+                    </p>
+                    <p>Одна из самых любимых народом комедий про добряка заведующего детсадом, который как две капли похож на рецидивиста, сбежавшего из тюрьмы. Работники уголовного розыска решили воспользоваться этим сходством для розыска похищенных археологических ценностей.</p>
+                </div>
+                <div class="film-4">
+                    <iframe class="f-4" width="560" height="405" src="https://rutube.ru/play/embed/fcb693c38528938caa3b70101b7c58bf" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <h1>Приключения Шурика</h1>
+                    <p>Режиссер: Гайдай Леонид Иович
+                        Сценаристы: Гайдай Леонид Иович, Костюковский Яков, Слободской Морис
+                        Композитор: Зацепин Александр</p>
+                    <p>Знакомьтесь: Шурик. Просто Шурик — рыцарь, благородный сердцем и поступками. Шурик в два счета перевоспитает хулигана, защитит от расхищения склад и сдаст все экзамены! </p>
+                </div>
+            </section>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
