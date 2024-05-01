@@ -95,3 +95,36 @@ shurik1.addEventListener("click", () => {
     film3.style.display = "none";
     film4.style.display = "block";
 });
+
+const card1 = document.getElementsByClassName("card-1");
+const card2 = document.getElementsByClassName("card-2");
+const card3 = document.getElementsByClassName("card-3");
+const card4 = document.getElementsByClassName("card-4");
+
+card1.addEventListener("click", () => {
+    film1.style.display = "block";
+    film2.style.display = "none";
+    film3.style.display = "none";
+    film4.style.display = "none";
+});
+
+card2.addEventListener("click", () => {
+    film1.style.display = "none";
+    film2.style.display = "block";
+    film3.style.display = "none";
+    film4.style.display = "none";
+});
+
+card3.addEventListener("click", () => {
+    film1.style.display = "none";
+    film2.style.display = "none";
+    film3.style.display = "block";
+    film4.style.display = "none";
+});
+
+card4.addEventListener("click", () => {
+    film1.style.display = "none";
+    film2.style.display = "none";
+    film3.style.display = "none";
+    film4.style.display = "block";
+});
